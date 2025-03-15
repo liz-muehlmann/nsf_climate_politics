@@ -1,0 +1,51 @@
+"place_fips","state_name","place_name","meeting_type","transcript_id","transcript_year","transcript_month","transcript_day","meeting_date","stcounty_fips","county_name","state_fips","county_fips","n_ccMentions","n_gwMentions","n_ccgwMentions","ccBinary","gwBinary","ccgwBinary"
+"0636546","California","Inglewood city","MUNICIPAL COUNCIL","f_U2saDPjm0","2018","10","23",2018-10-23,"06037","Los Angeles County","06","037",0,0,0,0,0,0
+"2670520","Michigan","Saginaw city","MUNICIPAL COUNCIL","rH1wGH1Aohs","2022","09","12",2022-09-12,"26145","Saginaw County","26","145",0,0,0,0,0,0
+"2548955","Massachusetts","North Reading town","BOARD OF SELECTMEN","Fa4fGvMO0Q0","2011","09","27",2011-09-27,"25017","Middlesex County","25","017",0,0,0,0,0,0
+"0630000","California","Glendale city","MUNICIPAL COUNCIL","NNTu0dkVzeI","2019","11","19",2019-11-19,"06037","Los Angeles County","06","037",1,0,1,1,0,1
+"2743000","Minnesota","Minneapolis city","COMMITTEE","w9HxFbm3LeQ","2023","09","18",2023-09-18,"27053","Hennepin County","27","053",0,0,0,0,0,0
+"4752006","Tennessee","Nashville-Davidson metropolitan government (balance)","MUNICIPAL COUNCIL","m1hGFCNCuog","2018","10","16",2018-10-16,"47037","Davidson County","47","037",0,0,0,0,0,0
+"4659020","South Dakota","Sioux Falls city","SCHOOL BOARD","zzUtRfJ5pKQ","2022","06","01",2022-06-01,"46099","Minnehaha County","46","099",0,0,0,0,0,0
+"2650720","Michigan","Manistee city","MUNICIPAL COUNCIL","9BY4b16lgQE","2021","10","19",2021-10-19,"26101","Manistee County","26","101",0,0,0,0,0,0
+"3424930","New Jersey","Franklin borough","PLANNING/ZONING BOARD/COMMISSION","H7diMj_fwDM","2021","04","01",2021-04-01,"34037","Sussex County","34","037",0,0,0,0,0,0
+"4659020","South Dakota","Sioux Falls city","MUNICIPAL COUNCIL","w7XaJQ1Ze4M","2019","04","18",2019-04-18,"46099","Minnehaha County","46","099",0,0,0,0,0,0
+"2541165","Massachusetts","Milford town","PLANNING/ZONING BOARD/COMMISSION","icNUy_N1qPc","2017","10","03",2017-10-03,"25027","Worcester County","25","027",0,0,0,0,0,0
+"3964108","Ohio","Portage village","COUNTY COMMISSION","oHtJGE4qjq4","2019","09","26",2019-09-26,"39173","Wood County","39","173",0,0,0,0,0,0
+"1729652","Illinois","Glencoe village","VILLAGE BOARD","jAH8zGhIg2I","2019","01","17",2019-01-17,"17031","Cook County","17","031",0,0,0,0,0,0
+"4545017","South Carolina","Calhoun County","MUNICIPAL COUNCIL","8m-VxgzPv6w","2019","05","13",2019-05-13,"45017","Calhoun County","45","017",0,0,0,0,0,0
+"0670000","California","Santa Monica city","SCHOOL BOARD","-1dZCCKzvbE","2020","03","19",2020-03-19,"06037","Los Angeles County","06","037",0,1,1,0,1,1
+"3426820","New Jersey","Gloucester City city","MUNICIPAL COUNCIL","wUbZGY5Py14","2019","09","09",2019-09-09,"34007","Camden County","34","007",0,0,0,0,0,0
+"1978285","Iowa","Tipton city","MUNICIPAL COUNCIL","qgREn66Qtfc","2018","08","20",2018-08-20,"19031","Cedar County","19","031",0,0,0,0,0,0
+"5541675","Wisconsin","Lake Mills city","PLANNING/ZONING BOARD/COMMISSION","axIzqwdsrbA","2016","04","26",2016-04-26,"55055","Jefferson County","55","055",0,0,0,0,0,0
+"4142600","Oregon","Lincoln City city","MUNICIPAL COUNCIL","xQ2SDqbOtVk","2018","01","22",2018-01-22,"41041","Lincoln County","41","041",0,0,0,0,0,0
+"3935098","Ohio","Hicksville village","MUNICIPAL COUNCIL","zqp8Ca6qlgU","2022","04","18",2022-04-18,"39039","Defiance County","39","039",0,0,0,0,0,0
+"4867400","Texas","Shenandoah city","MUNICIPAL COUNCIL","b7A9M7ZYVnA","2020","03","11",2020-03-11,"48339","Montgomery County","48","339",0,0,0,0,0,0
+"0636546","California","Inglewood city","MUNICIPAL COUNCIL","SdUjDeZkfNY","2022","04","26",2022-04-26,"06037","Los Angeles County","06","037",0,0,0,0,0,0
+"0639496","California","Lake Forest city","MUNICIPAL COUNCIL","hNqKP3KYoEs","2023","05","02",2023-05-02,"06059","Orange County","06","059",0,0,0,0,0,0
+"2743000","Minnesota","Minneapolis city","COMMITTEE","f_6o0Wsc6lw","2019","09","25",2019-09-25,"27053","Hennepin County","27","053",0,0,0,0,0,0
+"3737147","North Carolina","Pitt County","COMMITTEE","9qCgw5JZH0Y","2019","09","10",2019-09-10,"37147","Pitt County","37","147",0,0,0,0,0,0
+"4659020","South Dakota","Sioux Falls city","MUNICIPAL COUNCIL","Bc83hC-PjsE","2020","12","28",2020-12-28,"46099","Minnehaha County","46","099",0,0,0,0,0,0
+"1682810","Idaho","Twin Falls city","MUNICIPAL COUNCIL","7TOOMBgpmIM","2016","06","26",2016-06-26,"16083","Twin Falls County","16","083",0,0,0,0,0,0
+"1644200","Idaho","Kootenai city","BOARD OF COMMISSIONERS","QtbrRf2Ij58","2020","09","09",2020-09-09,"16017","Bonner County","16","017",0,0,0,0,0,0
+"2745808","Minnesota","New Prague city","MUNICIPAL COUNCIL","__Lgbvn97qY","2020","10","19",2020-10-19,"27139","Scott County","27","139",0,0,0,0,0,0
+"4134100","Oregon","Hillsboro city","SCHOOL BOARD","ybA15PV392s","2014","06","24",2014-06-24,"41067","Washington County","41","067",0,0,0,0,0,0
+"5164000","Virginia","Portsmouth city","MUNICIPAL COUNCIL","F3fDamDx4Xc","2023","04","25",2023-04-25,"51740","Portsmouth city","51","740",0,0,0,0,0,0
+"2929189","Missouri","St. Louis County","MUNICIPAL COUNCIL","4xDjEJ7IQFk","2016","09","13",2016-09-13,"29189","St. Louis County","29","189",0,0,0,0,0,0
+"0630000","California","Glendale city","MUNICIPAL COUNCIL","R9cImXHEwqY","2017","10","17",2017-10-17,"06037","Los Angeles County","06","037",1,0,1,1,0,1
+"0600674","California","Albany city","PARKS/REC BOARD/COMMISSION","48gVbRz-IQk","2022","10","13",2022-10-13,"06001","Alameda County","06","001",0,0,0,0,0,0
+"4738320","Tennessee","Johnson City city","BOARD OF COMMISSIONERS","Em6xUvmIAOU","2021","04","15",2021-04-15,"47179","Washington County","47","179",0,0,0,0,0,0
+"0665028","California","San Bruno city","MUNICIPAL COUNCIL","2pkRG9XVem4","2017","09","26",2017-09-26,"06081","San Mateo County","06","081",0,0,0,0,0,0
+"3457000","New Jersey","Paterson city","MUNICIPAL COUNCIL","sORqzA3pspM","2019","10","01",2019-10-01,"34031","Passaic County","34","031",0,0,0,0,0,0
+"4819900","Texas","Denison city","MUNICIPAL COUNCIL","ii_bjqB3Ha8","2016","03","21",2016-03-21,"48181","Grayson County","48","181",0,0,0,0,0,0
+"3949056","Ohio","Mentor city","MUNICIPAL COUNCIL","lnuVO94cB8U","2018","04","03",2018-04-03,"39085","Lake County","39","085",0,0,0,0,0,0
+"4040083","Oklahoma","Logan County","COUNTY BOARD","gZttKvdIda0","2019","11","04",2019-11-04,"40083","Logan County","40","083",0,0,0,0,0,0
+"4813276","Texas","Castle Hills city","OTHER BOARD","CMxBy6MmdeI","2021","06","23",2021-06-23,"48029","Bexar County","48","029",0,0,0,0,0,0
+"2743000","Minnesota","Minneapolis city","COMMITTEE","xpkTN1gnAp4","2018","03","14",2018-03-14,"27053","Hennepin County","27","053",0,0,0,0,0,0
+"2749300","Minnesota","Owatonna city","MUNICIPAL COUNCIL","WH2R2pBz2uM","2013","03","05",2013-03-05,"27147","Steele County","27","147",0,0,0,0,0,0
+"0683668","California","Watsonville city","MUNICIPAL COUNCIL","T_0z5bGFCMw","2020","04","14",2020-04-14,"06087","Santa Cruz County","06","087",2,0,2,1,0,1
+"2541165","Massachusetts","Milford town","COMMITTEE","rhPXoKJdgpM","2014","09","04",2014-09-04,"25027","Worcester County","25","027",0,0,0,0,0,0
+"4101000","Oregon","Albany city","MUNICIPAL COUNCIL","81BJodJvq4w","2022","08","22",2022-08-22,"41043","Linn County","41","043",1,0,1,1,0,1
+"2743864","Minnesota","Moorhead city","MUNICIPAL COUNCIL","eo6xTnhdXeI","2020","04","27",2020-04-27,"27027","Clay County","27","027",0,0,0,0,0,0
+"3956294","Ohio","North Canton city","MUNICIPAL COUNCIL","1sZftsC5y_0","2022","11","21",2022-11-21,"39151","Stark County","39","151",0,0,0,0,0,0
+"1616055","Idaho","Kootenai County","COUNTY BOARD","EKpr8nS0wNA","2019","08","27",2019-08-27,"16055","Kootenai County","16","055",0,0,0,0,0,0
+"4140700","Oregon","Lakeview town","MUNICIPAL COUNCIL","1WCk1BwKz2A","2014","05","13",2014-05-13,"41037","Lake County","41","037",0,0,0,0,0,0

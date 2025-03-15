@@ -1,0 +1,6 @@
+*.Rhistory
+admin
+
+/databricks
+/data
+/arcgis
