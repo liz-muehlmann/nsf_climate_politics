@@ -1,6 +1,6 @@
 outs:
-- md5: 336daa19f9f330c60c41c76f1e144ec8.dir
-  size: 3091441
-  nfiles: 78
+- md5: 9da835264b7f867fe1cbfe91b4c11aa0.dir
+  size: 2297825
+  nfiles: 207
   hash: md5
   path: arcgis

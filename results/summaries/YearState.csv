@@ -1,0 +1,578 @@
+"transcript_year","state_name","n"
+"2010","Alabama",5
+"2010","Arkansas",3
+"2010","California",266
+"2010","Colorado",1
+"2010","Florida",7
+"2010","Illinois",80
+"2010","Indiana",4
+"2010","Massachusetts",45
+"2010","Michigan",2
+"2010","Minnesota",30
+"2010","Mississippi",1
+"2010","Missouri",24
+"2010","New Jersey",20
+"2010","New York",370
+"2010","North Carolina",15
+"2010","Ohio",1
+"2010","Oregon",7
+"2010","Pennsylvania",38
+"2010","South Carolina",4
+"2010","South Dakota",1
+"2010","Tennessee",2
+"2010","Texas",38
+"2010","Virginia",1
+"2011","Alabama",52
+"2011","Arizona",5
+"2011","Arkansas",17
+"2011","California",304
+"2011","Colorado",1
+"2011","Florida",16
+"2011","Georgia",11
+"2011","Illinois",75
+"2011","Indiana",1
+"2011","Maine",1
+"2011","Massachusetts",22
+"2011","Michigan",21
+"2011","Minnesota",14
+"2011","Missouri",31
+"2011","Nebraska",40
+"2011","Nevada",3
+"2011","New Hampshire",4
+"2011","New Jersey",35
+"2011","New York",73
+"2011","North Carolina",78
+"2011","Ohio",45
+"2011","Oklahoma",8
+"2011","Oregon",58
+"2011","Pennsylvania",11
+"2011","South Carolina",9
+"2011","Tennessee",22
+"2011","Texas",85
+"2011","Virginia",52
+"2011","Washington",3
+"2011","West Virginia",2
+"2011","Wisconsin",1
+"2012","Alabama",110
+"2012","Arizona",13
+"2012","Arkansas",6
+"2012","California",302
+"2012","Colorado",42
+"2012","Florida",15
+"2012","Georgia",23
+"2012","Illinois",126
+"2012","Kentucky",1
+"2012","Massachusetts",13
+"2012","Michigan",70
+"2012","Minnesota",25
+"2012","Missouri",71
+"2012","Montana",4
+"2012","Nebraska",37
+"2012","Nevada",7
+"2012","New Hampshire",1
+"2012","New Jersey",61
+"2012","New York",53
+"2012","North Carolina",113
+"2012","Ohio",127
+"2012","Oklahoma",44
+"2012","Oregon",84
+"2012","Pennsylvania",81
+"2012","South Carolina",5
+"2012","South Dakota",55
+"2012","Tennessee",64
+"2012","Texas",97
+"2012","Utah",31
+"2012","Virginia",52
+"2012","Washington",71
+"2012","West Virginia",10
+"2012","Wisconsin",8
+"2013","Alabama",194
+"2013","Arizona",8
+"2013","Arkansas",5
+"2013","California",480
+"2013","Colorado",13
+"2013","Florida",19
+"2013","Georgia",28
+"2013","Illinois",238
+"2013","Indiana",4
+"2013","Iowa",39
+"2013","Kentucky",7
+"2013","Maine",1
+"2013","Massachusetts",55
+"2013","Michigan",144
+"2013","Minnesota",58
+"2013","Mississippi",2
+"2013","Missouri",104
+"2013","Montana",7
+"2013","Nebraska",55
+"2013","Nevada",8
+"2013","New Hampshire",8
+"2013","New Jersey",91
+"2013","New Mexico",4
+"2013","New York",109
+"2013","North Carolina",183
+"2013","Ohio",185
+"2013","Oklahoma",99
+"2013","Oregon",91
+"2013","Pennsylvania",52
+"2013","Rhode Island",2
+"2013","South Carolina",13
+"2013","South Dakota",223
+"2013","Tennessee",182
+"2013","Texas",119
+"2013","Utah",40
+"2013","Vermont",9
+"2013","Virginia",82
+"2013","Washington",86
+"2013","West Virginia",5
+"2013","Wisconsin",51
+"2013","Wyoming",3
+"2014","Alabama",168
+"2014","Arizona",21
+"2014","Arkansas",10
+"2014","California",921
+"2014","Colorado",27
+"2014","Florida",13
+"2014","Georgia",23
+"2014","Idaho",7
+"2014","Illinois",229
+"2014","Indiana",13
+"2014","Iowa",16
+"2014","Kansas",8
+"2014","Kentucky",13
+"2014","Louisiana",1
+"2014","Maine",2
+"2014","Maryland",1
+"2014","Massachusetts",40
+"2014","Michigan",179
+"2014","Minnesota",149
+"2014","Mississippi",13
+"2014","Missouri",110
+"2014","Montana",3
+"2014","Nebraska",66
+"2014","Nevada",1
+"2014","New Hampshire",17
+"2014","New Jersey",100
+"2014","New Mexico",33
+"2014","New York",89
+"2014","North Carolina",121
+"2014","Ohio",253
+"2014","Oklahoma",64
+"2014","Oregon",148
+"2014","Pennsylvania",94
+"2014","Rhode Island",41
+"2014","South Carolina",24
+"2014","South Dakota",190
+"2014","Tennessee",98
+"2014","Texas",167
+"2014","Utah",36
+"2014","Vermont",7
+"2014","Virginia",71
+"2014","Washington",88
+"2014","West Virginia",2
+"2014","Wisconsin",48
+"2014","Wyoming",1
+"2015","Alabama",198
+"2015","Arizona",35
+"2015","Arkansas",34
+"2015","California",967
+"2015","Colorado",43
+"2015","Florida",14
+"2015","Georgia",17
+"2015","Idaho",29
+"2015","Illinois",318
+"2015","Indiana",8
+"2015","Iowa",47
+"2015","Kansas",7
+"2015","Kentucky",6
+"2015","Louisiana",1
+"2015","Maine",32
+"2015","Maryland",3
+"2015","Massachusetts",67
+"2015","Michigan",315
+"2015","Minnesota",187
+"2015","Mississippi",3
+"2015","Missouri",141
+"2015","Nebraska",95
+"2015","Nevada",11
+"2015","New Hampshire",56
+"2015","New Jersey",136
+"2015","New Mexico",10
+"2015","New York",100
+"2015","North Carolina",154
+"2015","Ohio",396
+"2015","Oklahoma",129
+"2015","Oregon",234
+"2015","Pennsylvania",58
+"2015","Rhode Island",20
+"2015","South Carolina",58
+"2015","South Dakota",238
+"2015","Tennessee",107
+"2015","Texas",327
+"2015","Utah",80
+"2015","Vermont",2
+"2015","Virginia",138
+"2015","Washington",137
+"2015","West Virginia",1
+"2015","Wisconsin",158
+"2016","Alabama",212
+"2016","Arizona",55
+"2016","Arkansas",91
+"2016","California",820
+"2016","Colorado",45
+"2016","Florida",6
+"2016","Georgia",66
+"2016","Idaho",39
+"2016","Illinois",364
+"2016","Indiana",29
+"2016","Iowa",39
+"2016","Kansas",7
+"2016","Kentucky",12
+"2016","Louisiana",1
+"2016","Maine",37
+"2016","Maryland",7
+"2016","Massachusetts",110
+"2016","Michigan",312
+"2016","Minnesota",243
+"2016","Mississippi",15
+"2016","Missouri",224
+"2016","Montana",9
+"2016","Nebraska",104
+"2016","Nevada",8
+"2016","New Hampshire",87
+"2016","New Jersey",134
+"2016","New Mexico",3
+"2016","New York",123
+"2016","North Carolina",220
+"2016","Ohio",589
+"2016","Oklahoma",189
+"2016","Oregon",342
+"2016","Pennsylvania",66
+"2016","Rhode Island",16
+"2016","South Carolina",61
+"2016","South Dakota",230
+"2016","Tennessee",89
+"2016","Texas",365
+"2016","Utah",77
+"2016","Vermont",18
+"2016","Virginia",87
+"2016","Washington",102
+"2016","Wisconsin",202
+"2016","Wyoming",31
+"2017","Alabama",352
+"2017","Arizona",102
+"2017","Arkansas",52
+"2017","California",1044
+"2017","Colorado",99
+"2017","Connecticut",25
+"2017","Florida",39
+"2017","Georgia",71
+"2017","Idaho",34
+"2017","Illinois",485
+"2017","Indiana",34
+"2017","Iowa",103
+"2017","Kansas",32
+"2017","Kentucky",28
+"2017","Louisiana",3
+"2017","Maine",62
+"2017","Maryland",14
+"2017","Massachusetts",282
+"2017","Michigan",442
+"2017","Minnesota",501
+"2017","Mississippi",40
+"2017","Missouri",267
+"2017","Montana",68
+"2017","Nebraska",117
+"2017","Nevada",23
+"2017","New Hampshire",209
+"2017","New Jersey",275
+"2017","New Mexico",44
+"2017","New York",217
+"2017","North Carolina",397
+"2017","North Dakota",3
+"2017","Ohio",455
+"2017","Oklahoma",175
+"2017","Oregon",454
+"2017","Pennsylvania",160
+"2017","Rhode Island",28
+"2017","South Carolina",97
+"2017","South Dakota",978
+"2017","Tennessee",130
+"2017","Texas",304
+"2017","Utah",137
+"2017","Vermont",75
+"2017","Virginia",134
+"2017","Washington",219
+"2017","West Virginia",3
+"2017","Wisconsin",286
+"2017","Wyoming",44
+"2018","Alabama",400
+"2018","Arizona",176
+"2018","Arkansas",75
+"2018","California",1299
+"2018","Colorado",135
+"2018","Connecticut",57
+"2018","Florida",73
+"2018","Georgia",109
+"2018","Idaho",51
+"2018","Illinois",622
+"2018","Indiana",84
+"2018","Iowa",156
+"2018","Kansas",43
+"2018","Kentucky",47
+"2018","Maine",64
+"2018","Maryland",19
+"2018","Massachusetts",584
+"2018","Michigan",668
+"2018","Minnesota",671
+"2018","Mississippi",47
+"2018","Missouri",380
+"2018","Montana",50
+"2018","Nebraska",239
+"2018","Nevada",21
+"2018","New Hampshire",259
+"2018","New Jersey",474
+"2018","New Mexico",69
+"2018","New York",281
+"2018","North Carolina",633
+"2018","North Dakota",2
+"2018","Ohio",593
+"2018","Oklahoma",350
+"2018","Oregon",451
+"2018","Pennsylvania",127
+"2018","Rhode Island",24
+"2018","South Carolina",159
+"2018","South Dakota",727
+"2018","Tennessee",353
+"2018","Texas",508
+"2018","Utah",235
+"2018","Vermont",89
+"2018","Virginia",196
+"2018","Washington",348
+"2018","West Virginia",5
+"2018","Wisconsin",309
+"2018","Wyoming",54
+"2019","Alabama",437
+"2019","Arizona",162
+"2019","Arkansas",88
+"2019","California",1588
+"2019","Colorado",119
+"2019","Connecticut",62
+"2019","Florida",68
+"2019","Georgia",72
+"2019","Idaho",160
+"2019","Illinois",587
+"2019","Indiana",63
+"2019","Iowa",168
+"2019","Kansas",32
+"2019","Kentucky",42
+"2019","Maine",86
+"2019","Maryland",18
+"2019","Massachusetts",526
+"2019","Michigan",583
+"2019","Minnesota",727
+"2019","Mississippi",292
+"2019","Missouri",476
+"2019","Montana",34
+"2019","Nebraska",143
+"2019","Nevada",9
+"2019","New Hampshire",171
+"2019","New Jersey",454
+"2019","New Mexico",35
+"2019","New York",256
+"2019","North Carolina",601
+"2019","Ohio",666
+"2019","Oklahoma",321
+"2019","Oregon",404
+"2019","Pennsylvania",140
+"2019","Rhode Island",13
+"2019","South Carolina",118
+"2019","South Dakota",733
+"2019","Tennessee",405
+"2019","Texas",541
+"2019","Utah",271
+"2019","Vermont",71
+"2019","Virginia",195
+"2019","Washington",303
+"2019","West Virginia",27
+"2019","Wisconsin",285
+"2019","Wyoming",48
+"2020","Alabama",452
+"2020","Arizona",239
+"2020","Arkansas",69
+"2020","California",2023
+"2020","Colorado",143
+"2020","Connecticut",64
+"2020","Florida",76
+"2020","Georgia",109
+"2020","Idaho",213
+"2020","Illinois",611
+"2020","Indiana",74
+"2020","Iowa",189
+"2020","Kansas",45
+"2020","Kentucky",27
+"2020","Louisiana",1
+"2020","Maine",121
+"2020","Maryland",6
+"2020","Massachusetts",787
+"2020","Michigan",636
+"2020","Minnesota",638
+"2020","Mississippi",132
+"2020","Missouri",562
+"2020","Montana",10
+"2020","Nebraska",141
+"2020","Nevada",30
+"2020","New Hampshire",143
+"2020","New Jersey",649
+"2020","New Mexico",77
+"2020","New York",288
+"2020","North Carolina",854
+"2020","Ohio",702
+"2020","Oklahoma",451
+"2020","Oregon",511
+"2020","Pennsylvania",205
+"2020","Rhode Island",20
+"2020","South Carolina",177
+"2020","South Dakota",701
+"2020","Tennessee",686
+"2020","Texas",466
+"2020","Utah",346
+"2020","Vermont",154
+"2020","Virginia",186
+"2020","Washington",365
+"2020","West Virginia",34
+"2020","Wisconsin",429
+"2020","Wyoming",39
+"2021","Alabama",497
+"2021","Arizona",206
+"2021","Arkansas",91
+"2021","California",1562
+"2021","Colorado",227
+"2021","Connecticut",55
+"2021","Florida",79
+"2021","Georgia",125
+"2021","Idaho",159
+"2021","Illinois",637
+"2021","Indiana",58
+"2021","Iowa",144
+"2021","Kansas",44
+"2021","Kentucky",20
+"2021","Maine",79
+"2021","Maryland",18
+"2021","Massachusetts",779
+"2021","Michigan",656
+"2021","Minnesota",507
+"2021","Mississippi",175
+"2021","Missouri",602
+"2021","Montana",42
+"2021","Nebraska",166
+"2021","Nevada",68
+"2021","New Hampshire",173
+"2021","New Jersey",792
+"2021","New Mexico",129
+"2021","New York",238
+"2021","North Carolina",785
+"2021","Ohio",798
+"2021","Oklahoma",334
+"2021","Oregon",539
+"2021","Pennsylvania",177
+"2021","Rhode Island",43
+"2021","South Carolina",130
+"2021","South Dakota",721
+"2021","Tennessee",673
+"2021","Texas",544
+"2021","Utah",296
+"2021","Vermont",249
+"2021","Virginia",298
+"2021","Washington",431
+"2021","West Virginia",24
+"2021","Wisconsin",454
+"2021","Wyoming",28
+"2022","Alabama",398
+"2022","Arizona",180
+"2022","Arkansas",76
+"2022","California",1170
+"2022","Colorado",285
+"2022","Connecticut",42
+"2022","Florida",91
+"2022","Georgia",126
+"2022","Idaho",94
+"2022","Illinois",567
+"2022","Indiana",43
+"2022","Iowa",76
+"2022","Kansas",44
+"2022","Kentucky",19
+"2022","Maine",89
+"2022","Maryland",14
+"2022","Massachusetts",550
+"2022","Michigan",608
+"2022","Minnesota",480
+"2022","Mississippi",136
+"2022","Missouri",350
+"2022","Montana",24
+"2022","Nebraska",148
+"2022","Nevada",78
+"2022","New Hampshire",100
+"2022","New Jersey",692
+"2022","New Mexico",138
+"2022","New York",239
+"2022","North Carolina",787
+"2022","Ohio",535
+"2022","Oklahoma",286
+"2022","Oregon",431
+"2022","Pennsylvania",202
+"2022","Rhode Island",60
+"2022","South Carolina",115
+"2022","South Dakota",641
+"2022","Tennessee",336
+"2022","Texas",488
+"2022","Utah",330
+"2022","Vermont",180
+"2022","Virginia",241
+"2022","Washington",459
+"2022","West Virginia",29
+"2022","Wisconsin",356
+"2022","Wyoming",31
+"2023","Alabama",119
+"2023","Arizona",80
+"2023","Arkansas",16
+"2023","California",688
+"2023","Colorado",107
+"2023","Connecticut",28
+"2023","Florida",77
+"2023","Georgia",18
+"2023","Idaho",40
+"2023","Illinois",222
+"2023","Indiana",14
+"2023","Iowa",38
+"2023","Kansas",19
+"2023","Kentucky",23
+"2023","Maine",75
+"2023","Maryland",1
+"2023","Massachusetts",294
+"2023","Michigan",339
+"2023","Minnesota",271
+"2023","Mississippi",25
+"2023","Missouri",135
+"2023","Montana",10
+"2023","Nebraska",91
+"2023","Nevada",37
+"2023","New Jersey",314
+"2023","New Mexico",82
+"2023","New York",49
+"2023","North Carolina",421
+"2023","Ohio",200
+"2023","Oklahoma",95
+"2023","Oregon",231
+"2023","Pennsylvania",109
+"2023","Rhode Island",53
+"2023","South Carolina",76
+"2023","South Dakota",112
+"2023","Tennessee",49
+"2023","Texas",260
+"2023","Utah",185
+"2023","Virginia",98
+"2023","Washington",205
+"2023","West Virginia",20
+"2023","Wisconsin",102
+"2023","Wyoming",44

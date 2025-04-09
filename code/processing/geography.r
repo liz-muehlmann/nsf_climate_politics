@@ -68,7 +68,7 @@ counties <- countiesGeo %>%
 #   ____________________________________________________________________________
 ##  county subdivisions                                                     ####
 
-countySub <- read.csv("./data/modified/2020_SubcountyDivisions.csv")  %>% 
+countySub <- read.csv("./data/modified/ipcdp/2020_SubcountyDivisions.csv")  %>% 
     padFips() %>% 
     excludeStates() %>% 
     mutate(place_fips = paste(state_fips, countysub_fips, sep="")) %>% 
@@ -78,16 +78,19 @@ countySub <- read.csv("./data/modified/2020_SubcountyDivisions.csv")  %>%
 #   ____________________________________________________________________________
 ##  incorporated and census designated places                               ####
 
-ip <- majority(read.csv("./data/modified/2020_ip_overlap.csv")) %>% 
+ip <- majority(read.csv("./data/modified/ipcdp/ip_overlap.csv")) %>% 
     padFips() %>% 
     createFips()
 
-cdp <- majority(read.csv("./data/modified/2020_cdp_overlap.csv")) %>% 
+cdp <- majority(read.csv("./data/modified/ipcdp/cdp_overlap.csv")) %>% 
     padFips() %>% 
     createFips()
 
 ipcdp <- rbind(ip, cdp) %>%
-    select(-place_name, -coverage)
+    select(-NAMELSAD, -PERCENTAGE, -AREA) %>% 
+    rename(place_fips = GEOID,
+           county_fips = GEOID_1,
+           county_name = NAMELSAD_1)
 
 ##  ............................................................................
 ##  ipcdp Sample                                                            ####

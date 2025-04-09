@@ -33,8 +33,8 @@ library(ggplot2)
 library(RColorBrewer)
 options(java.parameters = "-Xmx8000m")
 
-load("./LocalView/data/modified/individual_datasets/lvClean_transcript.rdata") 
-load("./LocalView/data/modified/merged_datasets/allData_transcriptLevel.rdata") 
+load("./data/modified/local_view/lv_clean_transcript.rdata") 
+load("./data/modified/all_data/allData_transcriptLevel.rdata") 
 
 #   ____________________________________________________________________________
 #   merge all data variables with transcripts                               ####

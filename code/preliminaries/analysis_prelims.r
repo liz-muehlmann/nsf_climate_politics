@@ -41,10 +41,10 @@ options(strcode = list(insert_with_shiny = FALSE,  # set options
 ##   ...........................................................................
 
 majority <- function(df){
-    df %>% mutate(coverage = round(coverage, 2)) %>% 
-        filter(coverage != 0) %>% 
-        group_by(place_fips) %>% 
-        filter(coverage == max(coverage, na.rm = TRUE)) 
+    df %>% mutate(PERCENTAGE = round(PERCENTAGE, 2)) %>% 
+        filter(PERCENTAGE != 0) %>% 
+        group_by(GEOID) %>% 
+        filter(PERCENTAGE == max(PERCENTAGE, na.rm = TRUE)) 
 }
 
 ##  ............................................................................
