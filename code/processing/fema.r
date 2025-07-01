@@ -271,7 +271,7 @@ fema_countyLevel <- bind_rows(f_merged) %>%
   select(stcounty_fips, fema_year, transcript_year, fema_nDecCountyYear,
          fema_nDecTypeCountyYear, fema_decBinary)
 
-save(fema_countyLevel, file = "./data/modified/fema/fema_countyLevel.rdata")
+# save(fema_countyLevel, file = "./data/modified/fema/fema_countyLevel.rdata")
 
 # fema_countyLevel_geo <- fema_countyLevel %>%
 #   left_join(countiesGeo) %>%

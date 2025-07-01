@@ -1,4 +1,4 @@
-################################################################################
+## file description ############################################################
 ##                                                                            ##
 ## This file compiles summary statistics                                      ##
 ##                                                                            ##    
@@ -31,39 +31,45 @@
 ##              tigris                                                        ##   
 ##                                                                            ##
 ## Output:                                                                    ##    
-##          /LocalView/results/summaries/YearState.csv                        ##
-##          /LocalView/results/summaries/YearStateCounty.csv                  ##
-##          /LocalView/results/summaries/YearStateMeetingType.csv             ##
-##          /LocalView/results/summaries/YearStatePlace.csv                   ##
-##          /LocalView/results/summaries/prop_ccUse.csv                       ##
-##          /LocalView/results/summaries/state_tables/                        ##
-##                                                                            ##    
-################################################################################ 
+##          /results/summaries/StateTranscripts.csv                           ##
+##          /results/summaries/YearState.csv                                  ##    
+##          /results/summaries/YearState_place.csv                            ##    
+##          /results/summaries/YearState_type.csv                             ##    
+##          /results/summaries/YearState_mentions.csv                         ##    
+##          /results/summaries/prop_climate.csv                               ##    
+##          /results/summaries/prop_globalWarming.csv                         ##    
+##          /results/summaries/prop_ccgwMentions.csv                          ##    
+##                                                                            ##
+## ########################################################################## ## 
 
-### libraries ##################################################################
-##                                                                            ##
-##                       load libraries and data                              ##
-##                                                                            ##
-################################################################################
+
+#   ____________________________________________________________________________
+#   load libraries and data                                                 ####
+
 library(tidyverse)
 library(openxlsx)                                  # save tables
 library(flextable)                                 # make tables
+library(gt)                                        # summary rows
 
 load("./data/modified/local_view/lv_clean_noTranscript.rdata")
 load("./data/modified/all_data/allData_transcriptLevel.rdata")
 load("./data/modified/all_data/allData_State.rdata")
 
-### original summaries #########################################################
-##                                                                            ##
-##                        original data set summaries                         ##
-##      these summaries are on the original local view data n=103,372         ##
-##      this data set is at the place & meeting year level and does not       ##
-##                        include election or ACS data.                       ##
-##                                                                            ##
-################################################################################
-
 #   ____________________________________________________________________________
-#   transcripts available by year and state                                 ####
+#   transcripts available                                                   ####
+
+
+##  ............................................................................
+##  available transcripts: states                                           ####
+
+stateTranscripts <- lvClean_noTranscript %>%
+    group_by(state_name) %>% 
+    count()
+
+# write.csv(stateTranscripts, "./results/summaries/StateTranscripts.csv", row.names = FALSE)
+
+##  ............................................................................
+##  available transcripts: year and state                                   ####
 
 yearState <- lvClean_noTranscript %>% 
     group_by(transcript_year, state_name) %>% 
@@ -72,7 +78,7 @@ yearState <- lvClean_noTranscript %>%
 # write.csv(yearState, "./results/summaries/YearState.csv", row.names = FALSE)
 
 ##  ............................................................................
-##  place                                                                   ####
+##  available transcripts: place                                            ####
 
 yearState_place <- lvClean_noTranscript %>%
     group_by(transcript_year, state_name, place_name) %>% 
@@ -82,7 +88,7 @@ yearState_place <- lvClean_noTranscript %>%
 #           row.names = FALSE)
 
 ##  ............................................................................
-##  meeting type                                                            ####
+##  available transcripts: meeting type                                     ####
 
 yearState_type <- lvClean_noTranscript %>%
     group_by(transcript_year, state_name, meeting_type) %>% 
@@ -92,7 +98,7 @@ yearState_type <- lvClean_noTranscript %>%
 #           row.names = FALSE)
 
 ##  ............................................................................
-##  number CCGW                                                             ####
+##  availble transcripts: year, state, mentions                             ####
 
 yearState_mentions <- allData_state %>% 
     select(state_name, transcript_year, n_countiesInState, state_n_transcripts, 
@@ -102,11 +108,21 @@ yearState_mentions <- allData_state %>%
 #           "./results/summaries/YearState_mentions.csv",
 #           row.names = FALSE)
 
-stateSummary <- lvClean_noTranscript %>%
-    group_by(state_name) %>% 
-    count()
+#   ____________________________________________________________________________
+#   balanced panel check                                                    ####
 
-# write.csv(stateSummary, "./results/summaries/stateSummary.csv", row.names = FALSE)
+## number of counties in each state-year with a transcript
+n_transcripts_year <- lvClean_noTranscript %>% 
+    group_by(stcounty_fips) %>% 
+    mutate(n_transcripts_year = n()) %>% 
+    ungroup() 
+
+## balanced panel check
+table(n_transcripts_year$n_transcripts_year)
+
+
+#   ____________________________________________________________________________
+#   proportion: mentions                                                    ####
 
 ## count and proportion of climate change use by year
 prop_mentions <- lvClean_noTranscript %>% 
@@ -125,6 +141,9 @@ prop_mentions <- lvClean_noTranscript %>%
            year_propScriptGW = year_nScriptGW/year_n_transcripts,
            year_gwBinary = ifelse(gwBinary > 0, 1, 0)) 
 
+##  ............................................................................
+##  proportion: climate                                                     ####
+
 prop_climate <- prop_mentions %>%                      
     filter(year_ccBinary == 1) %>%  
     mutate(n_countiesCCmention = n_distinct(stcounty_fips),                     # number of unique counties that mention climate change in a year 
@@ -134,6 +153,9 @@ prop_climate <- prop_mentions %>%
 
 # write.csv(prop_climate, "./results/summaries/prop_climate.csv",
 #           row.names = FALSE)
+
+##  ............................................................................
+##  proportion: global warming                                              ####
 
 prop_globalWarming <- prop_mentions %>% 
     filter(year_gwBinary == 1) %>%  
@@ -145,6 +167,8 @@ prop_globalWarming <- prop_mentions %>%
 # write.csv(prop_globalWarming, "./results/summaries/prop_globalWarming.csv",
 #           row.names = FALSE)
 
+##  ............................................................................
+##  proportion: climate change & global warming                             ####
 
 prop_ccgwMentions <- prop_mentions %>% 
     filter(year_ccBinary == 1 | year_gwBinary == 1) %>% 
@@ -157,46 +181,19 @@ prop_ccgwMentions <- prop_mentions %>%
 #           row.names = FALSE)
 
 
-### state summaries ############################################################
-##                                                                            ##
-##                           full data set summaries                          ##
-##      these summaries are on the modified local view data n=43,592          ##
-##                                                                            ##
-################################################################################
+#   ____________________________________________________________________________
+#   prop tables by county                                                   ####
 
-## number of counties in each state-year with a transcript
-n_transcripts_year <- lvClean_noTranscript %>% 
-    group_by(stcounty_fips) %>% 
-    mutate(n_transcripts_year = n()) %>% 
-    ungroup() 
-
-## balanced panel check
-table(n_transcripts_year$n_transcripts_year)
-
-### prop tables by county ######################################################
-##                                                                            ##
-##                           proportion tables by county                      ##
-##                                                                            ##
-################################################################################
-
-
-
-
-
-
-
-############################# here #############################################
-for(state in unique(lvClean_noScript$state_name)){
-    s <- lvClean_noScript %>% 
+for(state in unique(lvClean_noTranscript$state_name)){
+    s <- lvClean_noTranscript %>% 
         filter(state_name == state) %>% 
         group_by(transcript_year, county_name) %>% 
         summarize(n_script = n(),
                   n_script_ccMention = sum(ccBinary),
                   total_ccMention = sum(n_ccMentions)) %>% 
         ungroup() %>% 
-        mutate(n_distinct_counties = n_distinct(county_name), 
-               n_script_ccMention = paste("(", n_script_ccMention, ")", 
-                                          sep = "")) %>% 
+        mutate(n_distinct_counties = n_distinct(county_name),
+               n_script_ccMention = paste("(", n_script_ccMention, ")", sep = "")) %>% 
         group_by(transcript_year) %>% 
         mutate(n_counties_inYear = n_distinct(county_name),
                nScript_nCC = paste(n_script, n_script_ccMention, sep = " "))
@@ -213,7 +210,7 @@ for(state in unique(lvClean_noScript$state_name)){
         select(n_distinct_counties) %>% 
         distinct(n_distinct_counties)
     
-    n_counties_inState <- lv_countyYear_noNA %>% 
+    n_counties_inState <- allData_transcriptLevel %>% 
         filter(state_name == state) %>% 
         select(n_countiesInState) %>% 
         distinct(n_countiesInState)
@@ -241,33 +238,9 @@ for(state in unique(lvClean_noScript$state_name)){
                               n_unique_allYears)) %>% 
         tab_stubhead(label = "County Name") %>% 
         sub_missing(rows = everything(), 
-                    missing_text = "---") %>% 
-        grand_summary_rows(columns = everything(),
-                     funs = sum)
+                    missing_text = "---") 
     
-        # gtsave(s_table, file = paste("./LocalView/results/summaries/state_tables/", 
-        #                              state, ".docx"))
+        gtsave(s_table, file = paste("./results/summaries/state_tables/",
+                                     state, ".docx"))
     
 }
-################################################################################
-
-s <- lvClean_noScript %>% 
-    filter(state_name == state) %>% 
-    group_by(transcript_year, county_name) %>% 
-    summarize(n_script = n(),
-              n_script_ccMention = sum(ccBinary),
-              total_ccMention = sum(n_ccMentions)) %>% 
-    ungroup() %>% 
-    mutate(n_distinct_counties = n_distinct(county_name), 
-           n_script_ccMention = paste("(", n_script_ccMention, ")", 
-                                      sep = "")) %>% 
-    group_by(transcript_year) %>% 
-    mutate(n_counties_inYear = n_distinct(county_name),
-           nScript_nCC = paste(n_script, n_script_ccMention, sep = " "))
-
-totals <- lvClean_noScript %>% 
-    group_by(state_name) %>% 
-    mutate(state_n_ccMentions = sum(n_ccMentions),
-           state_transcripts_ccMentions = sum(ccBinary)) %>% 
-    select(state_name, state_n_ccMentions, state_transcripts_ccMentions) %>% 
-    distinct(state_name, .keep_all = TRUE)
