@@ -58,7 +58,6 @@ load("./data/modified/all_data/allData_State.rdata")
 #   ____________________________________________________________________________
 #   transcripts available                                                   ####
 
-
 ##  ............................................................................
 ##  available transcripts: states                                           ####
 

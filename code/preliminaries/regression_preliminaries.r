@@ -14,10 +14,11 @@ library(lfe)                    # fixed effects & clustered standard errors
 library(stargazer)              # descriptive table output
 library(brglm2)                 # penalized maximum likelihood
 library(marginaleffects)        # marginal effects
+library(plm)                    # linear panel model
 library(ggplot2)                # plot themes
 library(modelsummary)           # regression outputs
 library(gt)                     # regression outputs
-library(flextable)
+library(flextable)              # regression outputs
 
 #   ____________________________________________________________________________
 #   customize goodness of fitness                                           ####
@@ -77,7 +78,10 @@ all_coefs <- c(# `(Intercept)` = "Constant",  per alicia do not include
                anyEpisode_twoYears = "Any Episodes in the Last Two Years",
                nDec_twoYears = "Number of Declarations in the Last Two Years",
                nEpisode_twoYears = "Number of Episodes in the Last Two Years",
+               med_age = "Median Age",
                rural_urban_3pt = "Rural Urban 3pt",
+               `as.factor(rural_urban_3pt)2` = "Suburban",
+               `as.factor(rural_urban_3pt)3` = "Rural",
                `log(total_pop)` = "Log of Total Population",
                log_totalPop = "Log of Total Population",
                log_medhhic = "Log of Median Household Income",
@@ -86,6 +90,7 @@ all_coefs <- c(# `(Intercept)` = "Constant",  per alicia do not include
                edu_percentPop = "Percent of Population with a College Degree",
                transcript_year = "Meeting Year",
                overall_cvi = "Overall Climate Vulnerability",
+               `as.factor(fema_decBinary)1` = "FEMA declaration (County/Year)",
                `nDec_fiveYears:DVP` = "Number of Declarations x DVP",
                `anyDec_fiveYears:DVP` = "Any Declaration x DVP",
                `nEpisode_fiveYears:DVP` = "Number of Episodes x DVP",
