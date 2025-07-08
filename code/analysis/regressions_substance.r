@@ -1,6 +1,8 @@
 ################################################################################
 ##                                                                            ##
-##                          Substantive Regressions                           ##
+##                         last save: 2025-07-07                              ##
+##                                                                            ##
+##                         Substantive Regressions                            ##
 ##                                                                            ##
 ##  Data: transcript-level local view data with fema/ noaa information        ##
 ##  Model: climate change or global warming binary (DV)                       ##
@@ -24,16 +26,6 @@ allData_transcriptLevel <- allData_transcriptLevel %>%
            anyDec_fiveYears = ifelse(nDec_fiveYears > 0, 1, 0),
            anyEpisode_fiveYears = ifelse(nEpisode_fiveYears > 0, 1, 0),
            transcript_year = as.numeric(transcript_year)) 
-
-#   ____________________________________________________________________________
-#   table design                                                            ####
-
-set_flextable_defaults(
-    font.size = 12, 
-    font.family = "Garamond",
-    line_spacing = 1,
-    padding = 0,
-    table.layout = "autofit")
 
 #   ____________________________________________________________________________
 ##  RQ1 - IS CLIMATE CHANGE BEING DISCUSSED & HOW                           ####
@@ -173,7 +165,7 @@ modelsummary(list(rq2, rq2_int_linear),
 ##   county-level controls; county clustered S.E.
 
 rq2.1 <- felm(ccgwBinary ~ DVP + rural_urban_3pt + log(total_pop) + log(med_hhic) + 
-                  perc_white + overall_cvi + edu_percentPop + overall_cvi +
+                  perc_white + edu_percentPop +
                   transcript_year|stcounty_fips|0|stcounty_fips, 
               data=allData_transcriptLevel)
 
@@ -204,7 +196,7 @@ modelsummary(rq2.2,
              # glance = glance_custom.pml,
              title = "Table 2.2: Penalized Maximum Likelihood",
              output = "flextable") %>% 
-    dv_header()  #%>% 
+    dv_header() # %>% 
     # save_as_docx(path = "./results/regressions/250324_rq2_Table2-2.docx")
 
 ## Table 2.1a: Penalized Maximum Likelihood Marginal Effects - Average Slopes
@@ -324,7 +316,6 @@ rq4_anyEpidvp <- felm(ccgwBinary ~ anyEpisode_fiveYears*DVP + rural_urban_3pt +
                           edu_percentPop + transcript_year + overall_cvi +
                           census_division|0|0|stcounty_fips, 
                       data=allData_transcriptLevel)
-
 
 ### . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..
 ###  RQ4 - between effects with DVP; n dec                                  ####

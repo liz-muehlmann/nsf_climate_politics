@@ -51,6 +51,7 @@ gof_felm <- list(
          fmt = f)
 )
 
+# goodness of fit values for penalized maximized likelihood
 gof_pml <- list(
     list("raw" = "nobs",
          "clean" = "N",
@@ -64,46 +65,82 @@ gof_pml <- list(
 )
 
 # model coefficients to include in output
-all_coefs <- c(# `(Intercept)` = "Constant",  per alicia do not include
+all_coefs <- c(# `(Intercept)` = "Constant",  per Alicia do not include
+                   
+        ## political coefs
                DVP = "Democratic Vote Percentage",
-               anyDec_fiveYears = "Had Any Declaration Last 5 Years",
-               nDec_fiveYears = "Number of Declarations Last 5 Years",
-               anyEpisode_fiveYears = "Had Any Episode Last 5 Years",
-               nEpisode_fiveYears = "Number of Episodes Last 5 Years",
-               anyDec_oneYear = "Any Declaration in the Last Year",
-               anyEpisode_oneYear = "Had any Episode in the Last Year",
-               nDec_oneYear = "Number of Declarations in the Last Year",
-               nEpisode_oneYear = "Number of Episodes in the Last Year",
-               anyDec_twoYears = "Any Declaration in the Last Two Years",
-               anyEpisode_twoYears = "Any Episodes in the Last Two Years",
-               nDec_twoYears = "Number of Declarations in the Last Two Years",
-               nEpisode_twoYears = "Number of Episodes in the Last Two Years",
+               `transcript_year:DVP` = "DVP x Meeting Year",
+               
+        ## demographic coefs
                med_age = "Median Age",
+               
+               ## rural urban
                rural_urban_3pt = "Rural Urban 3pt",
                `as.factor(rural_urban_3pt)2` = "Suburban",
                `as.factor(rural_urban_3pt)3` = "Rural",
+               
+               ## total pop
                `log(total_pop)` = "Log of Total Population",
                log_totalPop = "Log of Total Population",
+               
+               ## hhic
                log_medhhic = "Log of Median Household Income",
                `log(med_hhic)` = "Log of Median Household Income",
+               
+               ## race
                perc_white = "Percent White, Non-Hispanic",
+               
+               ## edu
                edu_percentPop = "Percent of Population with a College Degree",
-               transcript_year = "Meeting Year",
-               overall_cvi = "Overall Climate Vulnerability",
+        
+        ## climate coefs
+                overall_cvi = "Overall Climate Vulnerability",
+               
+        ## fema coefs 
                `as.factor(fema_decBinary)1` = "FEMA declaration (County/Year)",
-               `nDec_fiveYears:DVP` = "Number of Declarations x DVP",
-               `anyDec_fiveYears:DVP` = "Any Declaration x DVP",
-               `nEpisode_fiveYears:DVP` = "Number of Episodes x DVP",
-               `anyEpisode_fiveYears:DVP` = "Any Episode x DVP",
-               `transcript_year:DVP` = "DVP x Meeting Year",
+               
+               # any declaration
+               anyDec_oneYear = "Any Declaration in the Last Year",
+               anyDec_twoYears = "Any Declaration in the Last Two Years",
+               anyDec_fiveYears = "Had Any Declaration Last 5 Years",
+               
+               # interactions
                `anyDec_oneYear:DVP` = "DVP x Any Declaration in the Last Year",
-               `anyEpisode_oneYear:DVP` = "DVP x Had any Episode in the Last Year",
-               `nDec_oneYear:DVP` = "DVP x Number of Declarations in the Last Year",
-               `nEpisode_oneYear:DVP` = "DVP x Number of Episodes in the Last Year",
                `anyDec_twoYears:DVP` = "DVP x Any Declaration in the Last Two Years",
-               `anyEpisode_twoYears:DVP` = "DVP x Any Episodes in the Last Two Years",
+               `anyDec_fiveYears:DVP` = "Any Declaration x DVP",
+               
+               # n declaration
+               nDec_oneYear = "Number of Declarations in the Last Year",
+               nDec_fiveYears = "Number of Declarations Last 5 Years",
+               nDec_twoYears = "Number of Declarations in the Last Two Years",
+               
+               # interactions
+               `nDec_oneYear:DVP` = "DVP x Number of Declarations in the Last Year",
                `nDec_twoYears:DVP` = "DVP x Number of Declarations in the Last Two Years",
+               `nDec_fiveYears:DVP` = "Number of Declarations x DVP",
+               
+        ## noaa coefs
+               # any episode
+               anyEpisode_oneYear = "Had any Episode in the Last Year",
+               anyEpisode_twoYears = "Any Episodes in the Last Two Years",
+               anyEpisode_fiveYears = "Had Any Episode Last 5 Years",
+               
+               # interactions
+               `anyEpisode_oneYear:DVP` = "DVP x Had any Episode in the Last Year",
+               `anyEpisode_twoYears:DVP` = "DVP x Any Episodes in the Last Two Years",
+               `anyEpisode_fiveYears:DVP` = "Any Episode x DVP",
+               
+               # n episode
+               nEpisode_oneYear = "Number of Episodes in the Last Year",
+               nEpisode_twoYears = "Number of Episodes in the Last Two Years",
+               nEpisode_fiveYears = "Number of Episodes Last 5 Years",
+               
+               ## interactions
+               `nEpisode_oneYear:DVP` = "DVP x Number of Episodes in the Last Year",
                `nEpisode_twoYears:DVP` = "DVP x Number of Episodes in the Last Two Years",
+               `nEpisode_fiveYears:DVP` = "Number of Episodes x DVP",
+               
+        ## geographic coefs
                census_division1 = "Census Division 1",
                census_division2 = "Census Division 2",
                census_division3 = "Census Division 3",
@@ -113,6 +150,12 @@ all_coefs <- c(# `(Intercept)` = "Constant",  per alicia do not include
                census_division7 = "Census Division 7",
                census_division8 = "Census Division 8",
                census_division9 = "Census Division 9",
+               
+        ## year coefs
+                transcript_year = "Meeting Year",
+                `as.numeric(transcript_year)` = "Meeting Year",
+                `DVP:transcript_year` = "DVP x Meeting Year",
+        
                `as.factor(transcript_year)2011` = "2011",
                `as.factor(transcript_year)2012` = "2012",
                `as.factor(transcript_year)2013` = "2013",
@@ -126,6 +169,8 @@ all_coefs <- c(# `(Intercept)` = "Constant",  per alicia do not include
                `as.factor(transcript_year)2021` = "2021",
                `as.factor(transcript_year)2022` = "2022",
                `as.factor(transcript_year)2023` = "2023",
+               
+               ## year coef interactions
                `DVP:as.factor(transcript_year)2011` = "DVP x 2011",
                `DVP:as.factor(transcript_year)2012` = "DVP x 2012",
                `DVP:as.factor(transcript_year)2013` = "DVP x 2013",
@@ -139,8 +184,20 @@ all_coefs <- c(# `(Intercept)` = "Constant",  per alicia do not include
                `DVP:as.factor(transcript_year)2021` = "DVP x 2021",
                `DVP:as.factor(transcript_year)2022` = "DVP x 2022",
                `DVP:as.factor(transcript_year)2023` = "DVP x 2023"
-               
 )
+
+#   ____________________________________________________________________________
+#   table design                                                            ####
+
+set_flextable_defaults(
+    font.size = 12, 
+    font.family = "Garamond",
+    line_spacing = 1,
+    padding = 0,
+    table.layout = "autofit")
+
+#   ____________________________________________________________________________
+#   CCGW dependent variable header                                          ####
 
 dv_header <- function(ft) {
     ft %>% 
@@ -150,7 +207,8 @@ dv_header <- function(ft) {
         padding(padding = 0, part = "all")
 }
 
-
+#   ____________________________________________________________________________
+#   FEMA/NOAA dependent variable header                                     ####
 fema_noaa_header <- function(ft) {
     ft %>% 
         add_header_row(values = c(" ", "FEMA", "NOAA"), colwidths = c(1,2,2)) %>% 
@@ -161,6 +219,8 @@ fema_noaa_header <- function(ft) {
         padding(padding = 0, part = "all")
 }
 
+#   ____________________________________________________________________________
+#   format labels                                                           ####
 fmt_me <- function(ft) {
     ft %>% 
         flextable() %>% 
