@@ -1,5 +1,5 @@
 # note: 
-This repo is currently being rebuilt after data loss. Some code my not refer to new variables
+This repo is currently being rebuilt after data loss. Some code may not refer to new variables
 
 # NSF climate change and local politics <!-- omit in toc -->
 Shared github for NSF DRMS Climate and Local Political Participation Project. 
